@@ -1,0 +1,13 @@
+<h1> Posts </h1>
+
+<% if @posts.blank? %>
+  Nenhum post encontrado ...
+<% else %>
+
+  <div class="row">
+    <% @posts.each do |post| %>
+      <%= render 'post', post: post %>
+    <% end %>
+  </div>
+
+<% end %>

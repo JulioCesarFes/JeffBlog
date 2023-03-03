@@ -1,0 +1,2 @@
+module Writer::CategoriesHelper
+end
